@@ -21,7 +21,11 @@ jobs:
       - name: Build Storybook
         run: npm run build-storybook
 
+      - name: Create `storybook` subdirectory
+        run: mkdir -p ./public/storybook && mv ./storybook-static/* ./public/storybook/
+
       - name: Deploy to GitHub Pages
-        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: storybook-static
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
