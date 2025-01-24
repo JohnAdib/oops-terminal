@@ -1,4 +1,4 @@
-# oops-terminal
+# Oops Terminal
 
 **oops-terminal** is a playful terminal UI component for React and non-React projects. It provides a simple, customisable way to create terminal-like UIs for fun or functional purposes.
 

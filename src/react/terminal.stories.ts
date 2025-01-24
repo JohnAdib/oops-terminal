@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { OopsTerminal } from './terminal';
 
 const meta = {
-  title: 'OopsTerminall',
+  title: 'OopsTerminal',
   component: OopsTerminal,
   parameters: {
     layout: 'centered',
