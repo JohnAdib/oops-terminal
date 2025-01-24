@@ -1,18 +1,20 @@
-// src/react/Terminal.tsx
-import * as React from "react";
-import { useEffect, useRef } from "react";
-import { ITerminal, Terminal } from "../core/terminal";
+import React, { useEffect, useRef } from "react";
+import { createTerminal, ITerminal } from "../core/terminal";
 
 
-export const ReactTerminal: React.FC<ITerminal> = (props) => {
+
+export const OopsTerminal: React.FC<ITerminal> = ({
+  header,
+  content,
+}) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (containerRef.current) {
-      const terminal = new Terminal(containerRef.current, props);
+      const terminal = createTerminal(containerRef.current, { header, content });
       terminal.init();
     }
-  }, [props]);
+  }, [header, content]);
 
   return <div ref={containerRef} className="oops-terminal"></div>;
 };

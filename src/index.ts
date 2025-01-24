@@ -1,3 +1,3 @@
-export { ITerminalProps, Terminal } from "./core/terminal";
-export { ReactTerminal } from "./react/terminal";
+export { ITerminal, createTerminal } from "./core/terminal";
+export { OopsTerminal } from "./react/terminal";
 
