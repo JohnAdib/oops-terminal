@@ -7,7 +7,7 @@ const meta = {
   title: 'OopsTerminall/Default',
   component: OopsTerminal,
   parameters: {
-    layout: 'fullscreen',
+    layout: 'centered',
   },
 } satisfies Meta<typeof OopsTerminal>;
 
