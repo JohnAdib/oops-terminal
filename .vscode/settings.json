@@ -4,7 +4,7 @@
     "**/coverage": true,
     // "**/build": true,
     "**/.next": true,
-    "**/storybook-static": true,
+    // "**/storybook-static": true,
     "**/.turbo": true,
     // "**/dist": true,
     "**/vendor": true
