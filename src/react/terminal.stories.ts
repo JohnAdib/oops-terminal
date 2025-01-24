@@ -19,6 +19,13 @@ export const Simple: Story = {
   }
 };
 
+export const SimpleWithMultipleLines: Story = {
+    args: {
+      header: 'Oops Terminal',
+      children: 'Hello World!!!\nLine 1\nLine 2\nLine 3\nLine 4\nLine 5\nLine 6\nLine 7\nLine 8\nLine 9\nLine 10'
+    }
+  };
+
 export const SimpleWithStrings: Story = {
   args: {
     header: 'Oops Terminal',
@@ -26,7 +33,7 @@ export const SimpleWithStrings: Story = {
         'Hi!!!',
         'Hiya 😀 ',
         'No worries! I\'m okay!',
-        '<i>Hello</i> World.',
+        '<i>Hello</i> World!',
         '&amp; Are you a programmer?',
         'First line\nSecond line\nThird line',
         'Another paragraph\nWith multiple\nLines of text',
