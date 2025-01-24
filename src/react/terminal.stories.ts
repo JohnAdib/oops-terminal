@@ -19,6 +19,22 @@ export const Simple: Story = {
   }
 };
 
+export const SimpleWithStrings: Story = {
+  args: {
+    header: 'Oops Terminal',
+    strings: [
+        'Hi!!!',
+        'Hiya 😀 ',
+        'No worries! I\'m okay!',
+        '<i>Hello</i> World.',
+        '&amp; Are you a programmer?',
+        'First line\nSecond line\nThird line',
+        'Another paragraph\nWith multiple\nLines of text',
+    ]
+  }
+};
+
+
 export const Page404: Story = {
   args: {
     header: '404 - Page Not Found',
