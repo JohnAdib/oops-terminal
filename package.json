@@ -11,13 +11,13 @@
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "build-storybook -o storybook-static"
+    "build-storybook": "storybook build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JohnAdib/oops-terminal.git"
   },
-  "homepage": "https://johnadib.github.io/oops-terminal/",
+  "homepage": "https://github.com/JohnAdib/oops-terminal",
   "bugs": {
     "url": "https://github.com/JohnAdib/oops-terminal/issues"
   },
