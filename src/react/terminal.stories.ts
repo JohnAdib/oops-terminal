@@ -48,3 +48,10 @@ export const PermissionDenied: Story = {
     children: 'You do not have permission to access this resource!',
   }
 };
+
+export const ErrorPage: Story = {
+  args: {
+    header: 'Really Bad Error!',
+    children: 'An error occurred! This is not your fault. However, it is our fault. We will fix it ASAP!',
+  }
+};

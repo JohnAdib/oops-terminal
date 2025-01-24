@@ -3,8 +3,8 @@ import { ReactTyped } from "react-typed";
 import "./style.css";
 
 export interface IOopsTerminal {
-  children: string;
   header: string;
+  children: string;
   loop?: boolean;
 }
 
