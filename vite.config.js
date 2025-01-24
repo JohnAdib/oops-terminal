@@ -1,18 +1,17 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
+import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 
 export default defineConfig({
+  plugins: [react(), cssInjectedByJsPlugin()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
+      entry: './src/index.ts',
       name: 'OopsTerminal',
       fileName: (format) => `oops-terminal.${format}.js`,
+      formats: ['es', 'cjs', 'umd'],
     },
     rollupOptions: {
-      // Exclude React from the bundle
       external: ['react', 'react-dom'],
       output: {
         globals: {

@@ -1,3 +1,5 @@
+import "./style.css";
+
 export interface ITerminal {
   header: string;
   content: string;
