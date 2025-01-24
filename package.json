@@ -1,6 +1,6 @@
 {
   "name": "oops-terminal",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A simple terminal UI component for React!",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/JohnAdib/oops-terminal.git"
   },
-  "homepage": "https://github.com/JohnAdib/oops-terminal",
+  "homepage": "https://johnadib.github.io/oops-terminal/",
   "bugs": {
     "url": "https://github.com/JohnAdib/oops-terminal/issues"
   },
