@@ -1,12 +1,12 @@
 import React from "react";
-import "./styles.css";
+import "./style.css";
 
-export interface ITerminal {
+export interface IOopsTerminal {
   header: string;
   content: string;
 }
 
-export const OopsTerminal: React.FC<ITerminal> = ({ header, content }) => {
+export const OopsTerminal: React.FC<IOopsTerminal> = ({ header, content }) => {
   return (
     <section className="oops-terminal">
       <div>

@@ -1,3 +1,1 @@
-export { ITerminal, createTerminal } from "./core/terminal";
-export { OopsTerminal } from "./react/terminal";
-
+export { IOopsTerminal, OopsTerminal } from "./react/terminal";
