@@ -11,16 +11,13 @@ export const createTerminal = (
 ) => {
   const render = () => {
     container.innerHTML = `
-      <div class="oops-terminal-wrapper">
-        <div class="oops-terminal2">
-          <div class="oops-terminal-header">${options.header}</div>
-          <div class="oops-terminal-content">${options.content}</div>
-        </div>
-      </div>
+      <section class="oops-terminal">
+        <header>${options.header}</header>
+        <main>${options.content}</main>
+      </section>
     `;
   };
 
-  // Public API for the terminal
   return {
     init: render,
   };

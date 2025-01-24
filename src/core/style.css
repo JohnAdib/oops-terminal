@@ -1,72 +1,67 @@
-.oops-terminal-wrapper {
-    perspective: 1500px;
-    margin-top: 10vh;
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-  }
 
-  .oops-terminal2 {
-    min-height: 350px;
-    overflow: hidden;
-    border: 1px solid #bbbbbb;
-    background-color: #191919;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-radius: 8px;
-    box-shadow: 0 20px 50px 10px rgba(0, 0, 0, 0.3);
-  }
+.oops-terminal {
+  min-height: 350px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #bbbbbb;
+  background-color: #191919;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 20px 50px 10px rgba(0, 0, 0, 0.3);
+}
 
-  .oops-terminal2.animate {
-    animation: animate-terminal 0.2s ease-out 0.5s forwards;
-  }
+.oops-terminal.animate {
+  animation: animate-terminal 0.2s ease-out 0.5s forwards;
+}
 
-  .oops-terminal-header {
-    background: #d3d3d3 linear-gradient(to bottom, #ebebeb, #d3d3d3);
-    color: #3f3f43;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    padding: 5px 10px;
-    border-radius: 4px 4px 0 0;
-    border-bottom: 1px solid #888888;
-    user-select: none;
-  }
+.oops-terminal header {
+  background: #d3d3d3 linear-gradient(to bottom, #ebebeb, #d3d3d3);
+  color: #3f3f43;
+  text-align: center;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 10px;
+  border-radius: 8px 8px 0 0;
+  user-select: none;
+}
 
-  .oops-terminal-content {
-    padding: 8px 16px;
-    max-height: 310px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    font-family: "Roboto Mono", monospace;
-    font-size: 90%;
-    color: #64df46;
-    line-height: 20px;
-  }
+.oops-terminal main {
+  padding: 8px 16px;
+  max-height: 310px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: monospace;
+  font-size: 90%;
+  color: #64df46;
+  height: 100%;
+  line-height: 20px;
+}
 
-  .oops-terminal-content p {
-    margin: 0;
-  }
+.oops-terminal main p {
+  margin: 0;
+  padding: 0;
+}
 
-  .oops-terminal-content a {
-    color: #64df46;
-    text-decoration: underline;
-  }
+.oops-terminal main a {
+  color: #64df46;
+  text-decoration: underline;
+}
 
-  .oops-terminal-content a:hover {
-    color: #8ef574;
-  }
+.oops-terminal main a:hover {
+  color: #8ef574;
+}
 
-  /* Add keyframes for the animation if used */
-  @keyframes animate-terminal {
-    0% {
-      transform: scale(0.95) translateY(20px);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1) translateY(0);
-      opacity: 1;
-    }
+/* Add keyframes for the animation if used */
+@keyframes animate-terminal {
+  0% {
+    transform: scale(0.95) translateY(20px);
+    opacity: 0;
   }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
