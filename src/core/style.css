@@ -1,13 +1,13 @@
-.terminal-wrapper {
+.oops-terminal-wrapper {
     perspective: 1500px;
     margin-top: 10vh;
     max-width: 700px;
     width: 100%;
-    margin: 2rem auto;
+    margin: 0 auto;
     position: relative;
   }
 
-  .terminal {
+  .oops-terminal2 {
     min-height: 350px;
     overflow: hidden;
     border: 1px solid #bbbbbb;
@@ -20,11 +20,11 @@
     box-shadow: 0 20px 50px 10px rgba(0, 0, 0, 0.3);
   }
 
-  .terminal.animate {
+  .oops-terminal2.animate {
     animation: animate-terminal 0.2s ease-out 0.5s forwards;
   }
 
-  .terminal-header {
+  .oops-terminal-header {
     background: #d3d3d3 linear-gradient(to bottom, #ebebeb, #d3d3d3);
     color: #3f3f43;
     text-align: center;
@@ -35,7 +35,7 @@
     user-select: none;
   }
 
-  .terminal-content {
+  .oops-terminal-content {
     padding: 8px 16px;
     max-height: 310px;
     overflow-x: hidden;
@@ -46,16 +46,16 @@
     line-height: 20px;
   }
 
-  .terminal-content p {
+  .oops-terminal-content p {
     margin: 0;
   }
 
-  .terminal-content a {
+  .oops-terminal-content a {
     color: #64df46;
     text-decoration: underline;
   }
 
-  .terminal-content a:hover {
+  .oops-terminal-content a:hover {
     color: #8ef574;
   }
 

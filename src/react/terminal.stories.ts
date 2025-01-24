@@ -1,9 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import "../core/style.css";
 
 import { OopsTerminal } from './terminal';
 
 const meta = {
-  title: 'OopsTerminal/Default',
+  title: 'OopsTerminall/Default',
   component: OopsTerminal,
   parameters: {
     layout: 'fullscreen',
@@ -16,6 +17,6 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     header: 'Oops Terminal',
-    content: 'Hello World!'
+    content: 'Hello World!!!'
   }
 };
