@@ -1,3 +1,3 @@
-export default function oopsTerminal() {
-  console.log("Oops! Terminal is not ready yet. Stay tuned!");
-}
+export { ITerminalProps, Terminal } from "./core/terminal";
+export { ReactTerminal } from "./react/terminal";
+
